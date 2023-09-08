@@ -1,8 +1,5 @@
 package llm
 
-//go:generate -command cuda-version sh -c "nvcc --version | grep -o -E 'release ([0-9]+)\.' | awk '{print $$2}' | tr -d '.'"
-//go:generate cuda-version
-
 //go:generate git submodule init
 
 //go:generate git submodule update --force ggml
